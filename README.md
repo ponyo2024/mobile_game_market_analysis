@@ -58,12 +58,6 @@ This project analyzes the global mobile game market from 2020 to 2024 using Sens
 
 ---
 
-## 📎 Notebook
-
-📓 [`mobile_game_market_analysis.ipynb`](./Mobile%20Game%20Market%20Midterm_Ji%20Weng.ipynb)
-
----
-
 ## 🔗 Links
 
 - GitHub: https://github.com/ponyo2024/mobile_game_market_analysis  
