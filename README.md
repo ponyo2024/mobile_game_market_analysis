@@ -1,68 +1,56 @@
-# 🎮 Global Mobile Game Market Analysis (2020–2024)
+# 🎮 Mobile Game Market Analysis (2020–2024)
 
-This project analyzes the global mobile game market from 2020 to 2024 using Sensor Tower data, focusing on downloads, revenue, clustering, and genre performance by country.
+Welcome to the repository for the **Data Mining Analysis of the Global Mobile Game Market**.  
+This project explores trends, regional dynamics, and genre-specific patterns in the mobile gaming industry from **2020 to 2024**, using data mining techniques such as:
 
-**Author**: Ji Weng  
-**Last Updated**: March 23, 2025
+- Clustering (K-Means, Hierarchical, DBSCAN)  
+- Predictive Modeling (Linear Regression)  
+- Exploratory Data Analysis (EDA)  
+- Principal Component Analysis (PCA)
 
----
-
-## 📁 Dataset
-
-- Source: Sensor Tower  
-- Global top 10,000 apps by downloads & revenue (2020–2024)  
-- Country-level app data for 21 high-GDP countries  
-- Genre-level and app-level performance  
-- Format: CSV, preprocessed in Python
-
-📂 [Dataset folder](./datasets)
+> 🎯 The analysis provides **actionable insights** for **developers**, **publishers**, and **investors** navigating this competitive landscape.
 
 ---
 
-## 📊 Project Structure
+## 🔍 Project Overview
 
-### ✅ Global Macro Trends
-- Global downloads dropped slightly; revenue stayed strong.
-- US, China, and Japan dominate both volume and monetization.
+The global mobile gaming market has expanded rapidly, driven by:
 
-### ✅ Country Clustering
-- Clustering by 5-year trends and 2024 genre revenue.
-- Identified 4 clusters:
-  - 🟩 Revenue Giant (US)
-  - 🟥 East Hardcore (China, Japan)
-  - 🟨 Light Volume Hybrid (India, Brazil)
-  - 🟦 Balanced Medium (Europe)
+- Increasing **smartphone adoption**
+- Technological **advancements**
+- Shifting **player behaviors**
 
-### 🚧 Deep Dive: Key Countries
-- U.S. complete (genre trends, RPD, total growth).
-- Japan, China, India, Brazil to be added.
+This project analyzes market trends from **2020 to 2024**, focusing on:
 
-### 🚧 App Clustering
-- Clustered by Average DAU and Revenue Per Download (RPD).
-- Profiles include:
-  - 👑 Revenue Kings
-  - 🐋 Whales
-  - 🌍 Traffic Giants
-  - 🎮 Casual Sailors
+- **Global Trends**: Download and revenue patterns, with a forecast for **2025**  
+- **Regional Analysis**: Country-level clustering to identify market archetypes (e.g., high-revenue vs. high-download countries)  
+- **Game-Level Insights**: Clustering of games by **engagement (DAU)** and **monetization (RPD)**, correlated with genres  
 
-### 🔜 Predictive Modeling
-- Forecast 2025 downloads & revenue using cluster insights.
+The analysis leverages data from **Sensor Tower**, a leading mobile app analytics platform.
 
 ---
 
-## 📌 Key Insights
+## 📂 Dataset
 
-- Revenue ≠ Downloads: Monetization is market-specific.
-- GDP explains ~45% of revenue variance (Spearman correlation).
-- Strong genres vary by country cluster.
+The dataset is sourced from **Sensor Tower** and includes:
+
+- **Global Top 10,000 Apps by Revenue and Downloads (2020–2024)**  
+  → 50,000 rows per metric (5 years × 10,000 apps)
+  
+- **Top 10,000 Apps by Revenue in 21 High-GDP Countries (2020–2024)**  
+  → 1,050,000 rows (21 countries × 5 years)
+
+> 📊 **Total**: 115 CSV files, **1.15 million rows**
+
+### 🗃️ Key Columns
+
+- `App Name`, `App ID`, `Publisher Name`, `Publisher ID`  
+- `Platform`: iOS (App Store) or Android (Google Play)  
+- `Downloads`, `Revenue (USD)`, `Average DAU`, `RPD (Revenue per Download)`  
+- `Game Genre`: Puzzle, Strategy, Shooter, Simulation, Casino, etc.
+
+> ⚠️ Note: Due to file size, only a **sample dataset** is included in this repository.  
+> The **full dataset** is referenced in the final report.
 
 ---
 
-## 🔗 Links
-
-- GitHub: https://github.com/ponyo2024/mobile_game_market_analysis  
-- Dataset: https://github.com/ponyo2024/mobile_game_market_analysis/datasets
-
----
-
-> Mid-term project for data mining — focused on real-world industry insight for publishers & analysts.
